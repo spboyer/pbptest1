@@ -1,3 +1,5 @@
+sudo:required
+
 deploy:
   provider: azure_web_apps
   username: pbp       # If AZURE_WA_USERNAME isn't set
