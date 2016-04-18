@@ -1,0 +1,5 @@
+deploy:
+  provider: azure_web_apps
+  username: pbp       # If AZURE_WA_USERNAME isn't set
+  password: Shayne1234   # If AZURE_WA_PASSWORD isn't set
+  site: pbptest1       # If AZURE_WA_SITE isn't set
