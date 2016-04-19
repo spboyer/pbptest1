@@ -9,4 +9,7 @@ install:
 
 deploy:
   provider: azure_web_apps
+  username: "pbptest1"
+  password: "Shayne1234"
+  site: "pbptest1"
   verbose: true
