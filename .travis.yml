@@ -12,4 +12,4 @@ env:
     - "FTP_USER=pbptest1"
     - "FTP_PASSWORD=Shayne1234"
 after_success:
-    "curl --ftp-create-dirs -T "." -u $FTP_USER:$FTP_PASSWORD ftp://waws-prod-blu-005.ftp.azurewebsites.windows.net"
+    "curl --ftp-create-dirs -T . -u $FTP_USER:$FTP_PASSWORD ftp://waws-prod-blu-005.ftp.azurewebsites.windows.net"
