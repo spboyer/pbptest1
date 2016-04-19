@@ -5,7 +5,8 @@ node_js:
 install:
   - npm install -g typescript
   - npm install -g ts-node
-  - npm install -g gulp gulp-cli
+  - npm install -g gulp
+  - npm install -g gulp-cli
 
 deploy:
   provider: azure_web_apps
