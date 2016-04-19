@@ -5,7 +5,7 @@ node_js:
 install:
   - npm install -g typescript
   - npm install -g ts-node
-  - npm install -g gulp-cli
+  - npm install -g gulp-cli 
 
 env:
   global:
