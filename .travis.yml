@@ -7,9 +7,9 @@ install:
   - npm install -g ts-node
   - npm install -g gulp-cli
 
-deploy:
-  provider: azure_web_apps
-  username: "pbptest1"
-  password: "Shayne1234"
-  site: "pbptest1"
-  verbose: true
+env:
+  global:
+    - "FTP_USER=pbptest1"
+    - "FTP_PASSWORD=Shayne1234"
+after_success:
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://waws-prod-blu-005.ftp.azurewebsites.windows.net"
